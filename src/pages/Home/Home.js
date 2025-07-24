@@ -8,6 +8,7 @@ function Home() {
   return (
     <div className="home">
       <header className="title">
+
         <div className="logo">
           <img src="/images/uis-logo.svg" alt="logo de la UIS" />
         </div>
@@ -18,15 +19,21 @@ function Home() {
             sesión!
           </p>
         </div>
+
       </header>
-      <main>
+      <main className="main-content">
 
         <Button text="¡Reserva ahora!" onClick={() => navigate("/login")} />
         <h3 className="main-title">Más lugares donde puedes Entrenar en la UIS</h3>
 
         <LugaresInfo />
       </main>
-      <footer></footer>
+
+      <footer className="footer-content">
+
+        <h1>UISport</h1>
+        <p>¡Tú web te reserva espacios en el Gimnasio-uis este 2025!</p>
+      </footer>
     </div>
   );
 }
