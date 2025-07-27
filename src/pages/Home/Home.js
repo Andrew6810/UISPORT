@@ -23,6 +23,7 @@ function Home() {
         </div>
 
       </header>
+      
       <main className="main-content">
 
         <Button text="¡Reserva ahora!" onClick={() => navigate("/login")} />
