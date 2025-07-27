@@ -40,11 +40,15 @@
   font-size: 3rem; /* 3rem = 48px */
   font-weight: bold;
   margin-bottom: 1rem;
-  background: rgb(66, 252, 66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: rgb(255, 255, 255);
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*background-clip: text;*/
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.UIS-verde {
+  color: rgb(66, 252, 66);
 }
 
 /* Párrafo del header */
@@ -131,7 +135,7 @@
 
 .footer-content h1 {
   font-size: 2rem;
-  color: #4CAF50;
+  color: rgb(66, 252, 66);
   margin-bottom: 0.5rem;
   font-weight: bold;
 }

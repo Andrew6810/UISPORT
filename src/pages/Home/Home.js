@@ -15,7 +15,9 @@ function Home() {
           <img src="/images/uis-logo.svg" alt="logo de la UIS" />
         </div>
         <div className="title-uis">
-          <h1>UISport</h1>
+          <h1>
+            <span className="UIS-verde">UIS</span>port
+          </h1>
           <p>
             ¡Consulta nuestros espacios de gimnasio disponibles para tu próxima
             sesión!
@@ -23,7 +25,7 @@ function Home() {
         </div>
 
       </header>
-      
+
       <main className="main-content">
 
         <Button text="¡Reserva ahora!" onClick={() => navigate("/login")} />
