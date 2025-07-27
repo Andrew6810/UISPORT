@@ -1,6 +1,8 @@
 import Button from "../../components/Button";
 import LugaresInfo from "../../components/LugaresInfo";
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
+
 
 function Home() {
   const navigate = useNavigate();

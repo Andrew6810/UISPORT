@@ -1,0 +1,216 @@
+/* ===== ESTILOS GENERALES DE LA PÁGINA HOME ===== */
+
+/* Contenedor principal de la página */
+.home {
+  min-height: 100vh; /* 100vh = 100% de la altura de la ventana */
+  background: linear-gradient(135deg, #000a1b 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ===== HEADER - ENCABEZADO ===== */
+.title {
+  padding: 5rem; /* 2rem = 32px (1rem = 16px por defecto) */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url('../../../public/images/fondo3.0.jpeg');
+  background-size: cover; /*La imagen cubre todo el contenedor sin deformarse*/
+  background-position: center;/*centra la imagen*/
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 1rem;/*cuadra el borde*/
+  margin:1rem;/*el margen del header*/
+}
+
+/* Logo de la UIS */
+.logo img {
+  width: 120px; /* Ancho fijo en píxeles */
+  height: auto; /* Altura automática para mantener proporción */
+  margin-bottom: 1rem;
+  position: absolute;
+  left: 10rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: width 0.3s ease, left 0.3s ease; /* Animación suave al cambiar tamaño */
+}
+
+/* Título principal */
+.title-uis h1 {
+  font-size: 3rem; /* 3rem = 48px */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: rgb(66, 252, 66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Párrafo del header */
+.title-uis p {
+  font-size: 1.2rem; /* 1.2rem = 19.2px */
+  color: #ffffff;
+  max-width: 600px; /* Ancho máximo para mejor legibilidad */
+  margin: 0 auto;
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* ===== MAIN - CONTENIDO PRINCIPAL ===== */
+.main-content {
+  flex: 1; /* Toma el espacio restante disponible */
+  padding: 3rem 2rem; /* 3rem arriba/abajo, 2rem izquierda/derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Espacio entre elementos */
+}
+
+/* Título de la sección principal */
+.main-title {
+  font-size: 2rem; /* 2rem = 32px */
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== GALERÍA DE LUGARES ===== */
+.sites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Espacio entre tarjetas */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Tarjetas de lugares */
+.card-lugar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem; /* 1rem = 16px */
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover en las tarjetas */
+.card-lugar:hover {
+  transform: translateY(-5px); /* Se mueve 5px hacia arriba */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Imágenes de las tarjetas */
+.card-lugar img {
+  width: 100%;
+  height: 200px; /* Altura fija para uniformidad */
+  object-fit: cover; /* Mantiene proporción sin deformar */
+  border-radius: 0.5rem; /* 0.5rem = 8px */
+  margin-bottom: 1rem;
+}
+
+/* Títulos de las tarjetas */
+.titulo-lugar {
+  color: #ffffff;
+  font-size: 1.1rem; /* 1.1rem = 17.6px */
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ===== FOOTER - PIE DE PÁGINA ===== */
+.footer-content {
+  background: rgba(146, 146, 146, 0.3);
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content h1 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.footer-content p {
+  color: #ffffff;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== RESPONSIVE DESIGN - DISEÑO ADAPTATIVO ===== */
+
+/* Para tablets (pantallas medianas) */
+@media (max-width: 768px) {
+  .title-uis h1 {
+    font-size: 2.5rem; /* Más pequeño en tablets */
+  }
+  
+  .main-title {
+    font-size: 1.5rem;
+  }
+  
+  .sites {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .main-content {
+    padding: 2rem 1rem;
+  }
+  
+  /* Logo responsivo para tablets */
+  .logo img {
+    width: 50px; /* Más pequeño en tablets */
+    left: 5rem; /* Menos separación del borde */
+  }
+}
+
+@media (max-width: 1112px) {
+  .title-uis h1 {
+    font-size: 2.5rem; /* Más pequeño en tablets */
+  }
+  /* Logo responsivo para tablets */
+  .logo img {
+    width: 80px; /* Aún más pequeño en móviles */
+    left: 0rem; /* Muy cerca del borde */
+    position: relative; /* Cambiar a posición relativa para mejor control */
+    margin: 0 auto 1rem auto; /* Centrar horizontalmente */
+  }
+}
+
+/* Para móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+  .title-uis h1 {
+    font-size: 2rem; /* Aún más pequeño en móviles */
+  }
+  
+  .title-uis p {
+    font-size: 1rem;
+  }
+  
+  .sites {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    gap: 1rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .title {
+    padding: 1rem;
+  }
+  
+  /* Logo responsivo para móviles */
+  .logo img {
+    width: 80px; /* Aún más pequeño en móviles */
+    left: 0rem; /* Muy cerca del borde */
+    position: relative; /* Cambiar a posición relativa para mejor control */
+    margin: 0 auto 1rem auto; /* Centrar horizontalmente */
+  }
+}

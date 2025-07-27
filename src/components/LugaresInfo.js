@@ -18,7 +18,7 @@ const lugares = [
         src: "/images/image4_Aire_Libre.jpeg",
         alt: "Aire Libre",
         titulo: "Aire Libre"
-    }
+    },
 ];
 
 function LugaresInfo() {
