@@ -28,10 +28,11 @@ function Home() {
 
       <main className="main-content">
 
-        <Button text="¡Reserva ahora!" onClick={() => navigate("/login")} />
+        <Button className="btn btn-reserve"text="¡Reserva ahora!" onClick={() => navigate("/login")} />
         <h3 className="main-title">Más lugares donde puedes Entrenar en la UIS</h3>
 
         <LugaresInfo />
+        
       </main>
 
       <footer className="footer-content">

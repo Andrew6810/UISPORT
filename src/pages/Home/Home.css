@@ -3,7 +3,7 @@
 /* Contenedor principal de la página */
 .home {
   min-height: 100vh; /* 100vh = 100% de la altura de la ventana */
-  background: linear-gradient(135deg, #000a1b 0%, #000000 100%);
+  background: linear-gradient(135deg, #1a1818 100%, #3e5330 50%);
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
@@ -69,6 +69,28 @@
   align-items: center;
   gap: 2rem; /* Espacio entre elementos */
 }
+
+/* Boton de Ingreso al Login*/
+.btn-reserve {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border-radius:2rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 1rem solid #333;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.btn-reserve:hover {
+  background-color: #501d1d;/* Un rojo más oscuro al pasar el mouse */
+  border-color: #501d1d; /* Color del borde al pasar el cursor */
+  border-color: #333;
+}
+
+
 
 /* Título de la sección principal */
 .main-title {

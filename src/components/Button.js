@@ -1,7 +1,7 @@
 // src/components/Button.js
-function Button({ text, onClick}) {
+function Button({ text, onClick, className}) {
     return (
-        <button onClick={onClick} className="btn-reserva">
+        <button onClick={onClick} className={`btn ${className}`}>
             {text}
         </button>
     )
