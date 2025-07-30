@@ -105,7 +105,7 @@
 /* ===== GALERÍA DE LUGARES ===== */
 .sites {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   gap: 2rem; /* Espacio entre tarjetas */
   max-width: 1200px; /* Ancho máximo del contenedor */
   width: 100%;
