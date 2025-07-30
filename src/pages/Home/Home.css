@@ -116,7 +116,7 @@
 .card-lugar {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 1rem; /* 1rem = 16px */
-  padding: 1rem;
+  padding: 10px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -168,48 +168,6 @@
   opacity: 0.9;
 }
 
-/* ===== RESPONSIVE DESIGN - DISEÑO ADAPTATIVO ===== */
-
-/* Para tablets (pantallas medianas) */
-@media (max-width: 768px) {
-
-  .title-uis h1 {
-    font-size: 2.5rem; /* Más pequeño en tablets */
-  }
-  
-  .main-title {
-    font-size: 1.5rem;
-  }
-  
-  .sites {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .main-content {
-    padding: 2rem 1rem;
-  }
-  
-  /* Logo responsivo para tablets */
-  .logo img {
-    width: 50px; /* Más pequeño en tablets */
-    left: 5rem; /* Menos separación del borde */
-  }
-}
-
-@media (max-width: 1143px) {
-  .title-uis h1 {
-    font-size: 2.5rem; /* Más pequeño en tablets */
-  }
-  /* Logo responsivo para tablets */
-  .logo img {
-    width: 80px; /* Aún más pequeño en móviles */
-    left: 0rem; /* Muy cerca del borde */
-    position: relative; /* Cambiar a posición relativa para mejor control */
-    margin: 0 auto 1rem auto; /* Centrar horizontalmente */
-  }
-}
-
 /* Para móviles (pantallas pequeñas) */
 @media (max-width: 480px) {
   .title-uis h1 {
@@ -218,15 +176,6 @@
   
   .title-uis p {
     font-size: 1rem;
-  }
-  
-  .sites {
-    grid-template-columns: 1fr; /* Una sola columna en móviles */
-    gap: 1rem;
-  }
-  
-  .main-content {
-    padding: 1.5rem 0.5rem;
   }
   
   .title {
@@ -243,4 +192,67 @@
     position: relative; /* Cambiar a posición relativa para mejor control */
     margin: 0 auto 1rem auto; /* Centrar horizontalmente */
   }
+
+  .sites {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    gap: 1rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .card-lugar{
+    padding:0.8rem;
+  }
 }
+
+/* ===== RESPONSIVE DESIGN - DISEÑO ADAPTATIVO ===== */
+
+/* Para tablets (pantallas medianas) */
+@media (max-width: 768px) {
+
+  .title-uis h1 {
+    font-size: 2.5rem; /* Más pequeño en tablets */
+  }
+  
+  .main-title {
+    font-size: 1.5rem;
+  }
+  
+  .sites {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .main-content {
+    padding: 2rem 1rem;
+  }
+  
+  /* Logo responsivo para tablets */
+  .logo img {
+    width: 50px; /* Más pequeño en tablets */
+    left: 5rem; /* Menos separación del borde */
+  }
+}
+
+/* Para tablets (pantallas grandes) */
+
+@media (max-width: 1143px) {
+  .title-uis h1 {
+    font-size: 2.5rem; /* Más pequeño en tablets */
+  }
+  /* Logo responsivo para tablets */
+  .logo img {
+    width: 80px; /* Aún más pequeño en móviles */
+    left: 0rem; /* Muy cerca del borde */
+    position: relative; /* Cambiar a posición relativa para mejor control */
+    margin: 0 auto 1rem auto; /* Centrar horizontalmente */
+  }
+
+  .sites {
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  }
+}
+
+
