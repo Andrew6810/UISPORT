@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Record from './pages/Record'
 import Reservation from './pages/Reservation'
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/record" element={<Record />} />
           <Route path="/reservation" element={<Reservation />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
   );
